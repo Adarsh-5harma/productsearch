@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <input type="text" name="Search" placeholder="Search Item" id="searchbar">
+            <input type="submit" value="Search" name="search-submit-button" id="sub-inp-btn">
+        </form>
+
+        <div class="container">
+            <div>
+            <img src="blue Robot.jpeg" alt="robot" srcset="" style="height: 100px;" width="80%">
+            <h4>Blue Robot Nvidia</h4>
+            <h3><span>$10000</span></h3>
+            </div>
+
+            <div>
+            <img src="Bullet.avif" alt="bullet-bike" srcset="" style="height: 100px;">
+            <h4>Royal Enfield bullet</h4>
+            <h3><span>$200000</span></h3>
+            </div>
+
+            <div>
+            <img src="camera.jpeg" alt="camera" srcset="" style="height: 100px;">
+            <h4>Film making Camera</h4>
+            <h3><span>$800</span></h3>
+            </div>
+
+            <div>
+            <img src="car.jpg" alt="car" srcset="" style="height: 100px;">
+            <h4>Red Luxuries Car</h4>
+            <h3><span>$30000</span></h3>
+            </div>
+
+            <div>
+            <img src="gaming-pc-Setup.jpg" alt="computer" srcset="" style="height: 100px;">
+            <h4>Gaming PC Setup</h4>
+            <h3><span>$900</span></h3>
+            </div>
+
+            <div>
+            <img src="GOPro.jpeg" alt="gopro-vlogging-camera" srcset="" style="height: 100px;">
+            <h4>gopro-vlogging-camera</h4>
+            <h3><span>$400</span></h3>
+            </div>
+
+            <div>
+            <img src="GUitar.avif" alt="guitar" srcset="" style="height: 100px;">
+            <h4>Guitar</h4>
+            <h3><span>$200</span></h3>
+            </div>
+
+            <div>
+            <img src="Iphone.jpg" alt="Iphone" srcset="" style="height: 100px;">
+            <h4>iphone 16</h4>
+            <h3><span>$10000</span></h3>
+            </div>
+
+            <div>
+            <img src="macbook.jpg" alt="Apple-macbook" srcset="" style="height: 100px;">
+            <h4>macbook</h4>
+            <h3><span>$1200</span></h3>
+            </div>
+
+            <div>
+            <img src="MAnsion.jpg" alt="Luxurious MAnsion  " srcset="" style="height: 100px;" width="85%">
+            <h4>Luxurious Mansion</h4>
+            <h3><span>$40000</span></h3> 
+            </div>
+
+            <div>
+            <img src="RV van.png" alt="RV van" srcset="" style="height: 100px;">
+            <h4>Recreational Vehicle</h4>
+            <h3><span>$8000</span></h3>
+            </div>
+
+            <div>
+            <img src="starwar-space-ship.jpg" alt="spaceship" srcset="" style="height: 100px;">
+            <h4>starwar-space-ship</h4>
+            <h3><span>$250000</span></h3>
+            </div>
+
+            
+        </div>
+    </main>
+
+
+   <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("#searchbar").on("keyup", function(){
+        const value = $(this).val().toLowerCase();
+        $(".container div").each(function(){
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+});
+</script>
+</body>
+</html>

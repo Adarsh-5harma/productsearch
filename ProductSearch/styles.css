@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none ;
+    box-sizing: border-box;
+    border: none;
+}
+main{
+    width: 100%;
+    height: auto;
+    background:#fdffff ;
+    padding: 4rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main form input{
+    width: 50% rem;
+    padding: .5rem;
+    height: 2rem;
+    letter-spacing: 1px;
+    background: #f8f8f8;
+}
+
+main form input[type="submit"]{
+    border-radius: 10%;
+    width: 5rem;
+    cursor: pointer;
+
+
+}
+main .container{
+    display: grid;
+    padding: 2 rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+main .container>div{
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.1 );
+
+
+}
